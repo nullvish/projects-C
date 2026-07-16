@@ -11,23 +11,23 @@ int main(){
     int guess =0 ;
     while (1){
         ++guess;
-        printf("GUESS THE NUMBER BROTHER:");
+        printf("GUESS THE NUMBER BROTHER:\n");
         scanf("%d",&user);
         if (user==x){
-            printf("You have guessed it right BROSKIE!!. Your guesses are %d",guess);
+            printf("You have guessed it right BROSKIE!!. Your guesses are %d\n",guess);
             break;
         }
         else if (user>x+10){
-            printf("Lower number  BROSKIE");
+            printf("Lower number  BROSKIE\n");
         }
         else if (user<x-10){
-            printf("Higher number BROSKIE");
+            printf("Higher number BROSKIE\n");
         }
         else if (user>x){
-            printf("You are close broskie! JUST A LITTLE LOWER");
+            printf("You are close broskie! JUST A LITTLE LOWER\n");
         }
         else
-        printf("JUST LITTLE HIGHER BROSKIE!");
+        printf("JUST LITTLE HIGHER BROSKIE!\n");
         
 
 
