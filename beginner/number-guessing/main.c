@@ -4,24 +4,24 @@
 
 int main(){
     srand(time(NULL));
-    int x = rand() %100;
-    printf("%d",x);
+    int x = rand() %100 +1;
+    //printf("%d",x);
     int user ;
    
     int guess =0 ;
     while (1){
         ++guess;
-        printf("ENTER:");
+        printf("GUESS THE NUMBER BROTHER:");
         scanf("%d",&user);
         if (user==x){
-            printf("You have guessed it right . Your guesses are %d",guess);
+            printf("You have guessed it right BROSKIE!!. Your guesses are %d",guess);
             break;
         }
         else if (user>x+10){
-            printf("Lower number please");
+            printf("Lower number  BROSKIE");
         }
         else if (user<x-10){
-            printf("Higher number please");
+            printf("Higher number BROSKIE");
         }
         else if (user>x){
             printf("You are close broskie! JUST A LITTLE LOWER");
